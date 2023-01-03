@@ -1,0 +1,191 @@
+.product {
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+
+    color: #00284f;
+
+    @include onTablet {
+      margin-bottom: 0;
+
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    @include onDesktop {
+      line-height: 51px;
+    }
+  }
+
+  &__subtitle {
+    font-family: Piazzolla;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 4px 0;
+
+    min-width: 186px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+
+    text-align: center;
+
+    color: #00284f;
+
+    background: #ffffff;
+    border-radius: 50px;
+
+    @include onTablet {
+      padding: 5px 0;
+      min-width: 258px;
+
+      font-size: 22px;
+    }
+
+    @include onDesktop {
+      padding: 8px 0;
+      min-width: 306px;
+    }
+  }
+
+  &__inner {
+    display: block;
+
+    margin-bottom: 24px;
+
+    @include onTablet {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 32px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onTablet {
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__icon-wrap {
+    display: flex;
+  }
+
+  &__hide-content {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 32px;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__icon {
+    margin-right: 26px;
+    width: 37px;
+
+    @include onTablet {
+      width: auto;
+      margin-right: 32px;
+    }
+  }
+
+  &__instruction {
+    font-size: 16px;
+    line-height: 1.12;
+    font-weight: 500;
+
+    color: #00284f;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 1.28;
+    }
+
+    @include onDesktop {
+      font-weight: 700;
+    }
+
+    &--standard {
+      font-weight: 500;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+    }
+  }
+
+  &__price {
+    display: none;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &__old-price {
+    position: relative;
+
+    margin-right: 18px;
+
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 36px;
+
+    color: rgba(0, 40, 79, 0.3);
+
+    text-align: center;
+
+    letter-spacing: -0.03em;
+
+    @include onDesktop {
+      margin-right: 24px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%;
+
+      height: 2px;
+      background-color: #00284f;
+
+      transform: rotateZ(10deg);
+    }
+  }
+
+  &__current-price {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+
+    color: #00284f;
+
+    @include onTablet {
+      line-height: 51px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+  &__item {
+    border-bottom: 1px solid #1d1d1b;
+  }
+
+  &__title {
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: #00284f;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 1.44;
+    }
+  }
+
+  &__text {
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: #00284f;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 1.44;
+    }
+  }
+}

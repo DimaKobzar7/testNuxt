@@ -1,0 +1,156 @@
+.header {
+  margin-bottom: 40px;
+
+  @include onTablet {
+    margin-bottom: 36px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 93px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 46px;
+  }
+
+  &__icon {
+    width: 21px;
+    height: 21px;
+
+    @include onTablet {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-group {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    height: 20px;
+
+    @include onTablet {
+      width: 150px;
+      height: 24px;
+    }
+
+    @include onDesktop {
+      width: 196px;
+      height: 32px;
+    }
+  }
+
+  &__burger-menu {
+    margin-right: 12px;
+
+    @include onTablet {
+      margin-right: 33px;
+    }
+
+    @include onDesktop {
+      margin-right: 40px;
+    }
+  }
+
+  &__phone {
+    order: 0;
+
+    @include onTablet {
+      order: 1;
+
+      margin-left: 33px;
+    }
+
+    @include onDesktop {
+      order: 0;
+      margin: 0;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    display: inline-block;
+    margin-left: 12px;
+
+    @include onTablet {
+      margin-left: 0;
+    }
+
+    @include onDesktop {
+      margin-left: 40px;
+    }
+  }
+
+  &__cart-counter {
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 14px;
+    height: 14px;
+
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: #1d1d1b;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    letter-spacing: 0.04em;
+
+    background-color: #f5f352;
+
+    @include onTablet {
+      left: 30px;
+
+      width: 26px;
+      height: 26px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+
+  &__bottom {
+    display: none;
+
+    @include onTablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 55px;
+    }
+
+    @include onDesktop {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 29px;
+
+    color: #1d1d1b;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #73de6d;
+    }
+  }
+}

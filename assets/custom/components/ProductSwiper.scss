@@ -1,0 +1,77 @@
+.swiper {
+  &-slide {
+    display: flex;
+    justify-content: center;
+
+    @include onDesktop {
+      justify-content: flex-end;
+    }
+
+    img {
+      width: 285px;
+
+      -moz-user-select: none;
+      -o-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      @include onTablet {
+        width: 396px;
+      }
+
+      @include onDesktop {
+        width: 746px;
+      }
+    }
+  }
+
+  &-button-prev,
+  &-button-next {
+    top: 40%;
+
+    width: 46px;
+    height: 46px;
+
+    @include onDesktop {
+      top: 95%;
+
+      width: 40px;
+      height: 40px;
+    }
+
+    svg {
+      fill: #00284f;
+      transition: fill 0.3s;
+
+      &:hover {
+        fill: #69c522;
+      }
+    }
+  }
+
+  &-button-prev {
+    &:after {
+      content: '';
+    }
+
+    left: 10px;
+
+    @include onDesktop {
+      left: 83%;
+    }
+  }
+
+  &-button-next {
+    &:after {
+      content: '';
+    }
+
+    right: 10px;
+
+    @include onDesktop {
+      right: 0;
+    }
+  }
+}
