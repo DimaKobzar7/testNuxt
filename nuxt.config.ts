@@ -85,3 +85,6 @@ export default defineNuxtConfig({
 // };
 
 // git subtree push --prefix dist origin gh-pages
+// это в package json
+//  "homepage": "https://dimakobzar7.github.io/testNuxt/",
+//   "source": "app.vue",

@@ -1,7 +1,5 @@
 {
   "private": true,
-  "homepage": "https://dimakobzar7.github.io/testNuxt/",
-  "source": "app.vue",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
